@@ -33,7 +33,7 @@ public class Tutorijal {
                 niz = new double[mjerenja.length-1];
                 for(int i = 0; i<mjerenja.length; i++) {
                     if(i==1000) break;
-                    niz[i] = Double.parseDouble(mjerenja[i+1]);
+                    niz[i] = Double.valueOf(mjerenja[i+1]);
                 }
                 grad.setTemperature(niz);
                 gradovi.add(grad);
